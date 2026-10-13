@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+# nada de Konami ni volcados
+*.exe
+*.iso
+*.bin
+*.bin.z
+*.npz
+*.rar
+*.zip
+herramientas/sesiones/
+herramientas/sesiones_memscan/
+herramientas/vigilar_*.log
+*.jsonl

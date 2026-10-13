@@ -1,0 +1,16 @@
+Enganchado a pid 20332. Vigilando 0x03b59b83 (escribe, 1 bytes) por 20 s / 6 impactos.
+Breakpoint puesto en 21/21 hilos. Jugá normalmente.
+[1] 23:46:48 hilo 8420 -> 0x007a438d  mov dword ptr [esi + 0x150], eax | valor ahora 00 | eax=0x595c45 ebx=0x3b173e0 ecx=0x3e36ffff edx=0x57d141 esi=0x3b59a30 edi=0x0 ebp=0xfffffec2 esp=0x1afab8 pila=88 c6 b9 45 40 f0 7b c4 37 3d c3 45 28 d7 af 44
+      retornos? 0x66c48e 0x66c488 0x595c45
+[2] 23:46:48 hilo 8420 -> 0x007a438d  mov dword ptr [esi + 0x150], eax | valor ahora 00 | eax=0x58c720 ebx=0x3b173e0 ecx=0x3d4bffff edx=0x570390 esi=0x3b59a30 edi=0x0 ebp=0xfffffeac esp=0x1afab8 pila=48 9b b9 45 80 d7 7c c4 87 be c3 45 28 02 ae 44
+      retornos? 0x66c48e 0x66c488 0x58c720
+[3] 23:46:48 hilo 8420 -> 0x007a438d  mov dword ptr [esi + 0x150], eax | valor ahora 00 | eax=0x584675 ebx=0x3b173e0 ecx=0xbe7cffff edx=0x564964 esi=0x3b59a30 edi=0x0 ebp=0xfffffe97 esp=0x1afab8 pila=08 70 b9 45 c0 be 7d c4 57 3e c4 45 a8 32 ac 44
+      retornos? 0x66c48e 0x66c488 0x584675
+[4] 23:46:48 hilo 8420 -> 0x007a438d  mov dword ptr [esi + 0x150], eax | valor ahora 00 | eax=0x57b785 ebx=0x3b173e0 ecx=0x3e937fff edx=0x557d81 esi=0x3b59a30 edi=0x0 ebp=0xfffffe82 esp=0x1afab8 pila=c8 44 b9 45 00 a6 7e c4 a7 bc c4 45 88 68 aa 44
+      retornos? 0x66c48e 0x66c488 0x57b785
+[5] 23:46:48 hilo 8420 -> 0x007a438d  mov dword ptr [esi + 0x150], eax | valor ahora 00 | eax=0x573f62 ebx=0x3b173e0 ecx=0xbeae7fff edx=0x54c4f9 esi=0x3b59a30 edi=0x0 ebp=0xfffffe6d esp=0x1afab8 pila=88 19 b9 45 40 8d 7f c4 7f 39 c5 45 c8 a3 a8 44
+      retornos? 0x66c48e 0x66c488 0x573f62
+[6] 23:46:48 hilo 8420 -> 0x007a438d  mov dword ptr [esi + 0x150], eax | valor ahora 00 | eax=0x56cb79 ebx=0x3b173e0 ecx=0xbe0cffff edx=0x540d39 esi=0x3b59a30 edi=0x0 ebp=0xfffffe58 esp=0x1afab8 pila=48 ee b8 45 40 3a 80 c4 df b4 c5 45 48 e4 a6 44
+      retornos? 0x66c48e 0x66c488 0x56cb79
+Desenganchado. 6 impactos. Resumen por instrucción:
+  0x007a438d  x6

@@ -1,0 +1,12 @@
+Enganchado a pid 7164. Vigilando 0x006a7676 (ejecuta, 4 bytes) por 1200 s / 4 impactos.
+Breakpoint puesto en 24/24 hilos. Jugá normalmente.
+[1] 22:41:40 hilo 9744 -> 0x006a7676 | valor ahora 88 43 06 8a | eax=0x29 ebx=0x3b0bac4 ecx=0x3b59a30 edx=0x1afb14 esi=0x3b16d80 edi=0x3b59a30 ebp=0x1afb14 esp=0x1afadc pila=14 fb 1a 00 e0 29 f1 75 d0 55 e8 75 01 00 00 00
+      retornos? 0x6a66b5 0x5e5b02 0x5e0cca 0x5e0e2b 0x5e0f64 0x5e0fb6 0x9a759b 0x431fd2 0x401d75
+[2] 22:41:56 hilo 9744 -> 0x006a7676 | valor ahora 88 43 06 8a | eax=0x27 ebx=0x3b0bbcc ecx=0x3b58320 edx=0x0 esi=0x3b16d80 edi=0x3b58320 ebp=0x1afb14 esp=0x1afadc pila=14 fb 1a 00 e0 29 f1 75 d0 55 e8 75 01 00 00 00
+      retornos? 0x6a66b5 0x5e5b02 0x5e0cca 0x5e0e2b 0x5e0f64 0x5e0fb6 0x9a759b 0x431fd2 0x401d75
+[3] 22:42:24 hilo 9744 -> 0x006a7676 | valor ahora 88 43 06 8a | eax=0x27 ebx=0x3b0bdac ecx=0x3b58090 edx=0x0 esi=0x3b16d80 edi=0x3b58090 ebp=0x1afb14 esp=0x1afadc pila=14 fb 1a 00 e0 29 f1 75 d0 55 e8 75 01 00 00 00
+      retornos? 0x6a66b5 0x5e5b02 0x5e0cca 0x5e0e2b 0x5e0f64 0x5e0fb6 0x9a759b 0x431fd2 0x401d75
+[4] 22:43:04 hilo 9744 -> 0x006a7676 | valor ahora 88 43 06 8a | eax=0x29 ebx=0x3b0c0f4 ecx=0x3b58320 edx=0x1afb14 esi=0x3b16d80 edi=0x3b58320 ebp=0x1afb14 esp=0x1afadc pila=14 fb 1a 00 e0 29 f1 75 d0 55 e8 75 01 00 00 00
+      retornos? 0x6a66b5 0x5e5b02 0x5e0cca 0x5e0e2b 0x5e0f64 0x5e0fb6 0x9a759b 0x431fd2 0x401d75
+Desenganchado. 4 impactos. Resumen por instrucción:
+  0x006a7676  x4

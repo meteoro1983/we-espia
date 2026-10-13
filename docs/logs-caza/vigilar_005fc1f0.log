@@ -1,0 +1,21 @@
+Enganchado a pid 17568. Vigilando 0x005fc1f0 (ejecuta, 4 bytes) por 400 s / 60 impactos.
+Breakpoint puesto en 21/21 hilos. Jugá normalmente.
+[1] 23:13:04 hilo 19752 -> 0x005fc1f0 | valor ahora e9 1b 3e 16 | eax=0xf ebx=0x3b57e00 ecx=0x299 edx=0x0 esi=0xbda00010 edi=0x3b5a1e0 ebp=0x0 esp=0x1afa30 pila=d6 fc 5f 00 e0 a1 b5 03 00 7e b5 03 00 00 00 00
+      retornos? 0x5ffcd6 0x6d00c7 0x710689 0x715414
+[2] 23:13:04 hilo 19752 -> 0x005fc1f0 | valor ahora e9 1b 3e 16 | eax=0x11 ebx=0x0 ecx=0x299 edx=0x2 esi=0x1 edi=0x3b5a1e0 ebp=0x3b57e00 esp=0x1afa48 pila=36 e5 5f 00 e0 a1 b5 03 00 7e b5 03 00 00 00 00
+      retornos? 0x5fe536 0x710697 0x715414 0x717621
+[3] 23:13:18 hilo 19752 -> 0x005fc1f0 | valor ahora e9 1b 3e 16 | eax=0x13 ebx=0x3b5a700 ecx=0x21b9 edx=0x4 esi=0x3c edi=0x3b585b0 ebp=0x0 esp=0x1afa58 pila=d6 fc 5f 00 b0 85 b5 03 00 a7 b5 03 00 00 00 00
+      retornos? 0x5ffcd6 0x6d00c7 0x6d84c6
+[4] 23:14:45 hilo 19752 -> 0x005fc1f0 | valor ahora e9 1b 3e 16 | eax=0x1c ebx=0x3b5a700 ecx=0xb36 edx=0xd esi=0x17 edi=0x3b58320 ebp=0x0 esp=0x1afa28 pila=d6 fc 5f 00 20 83 b5 03 00 a7 b5 03 00 00 00 00
+      retornos? 0x5ffcd6 0x6d00c7 0x710689 0x715af5
+[5] 23:14:45 hilo 19752 -> 0x005fc1f0 | valor ahora e9 1b 3e 16 | eax=0x16 ebx=0x0 ecx=0xb36 edx=0x7 esi=0x1 edi=0x3b58320 ebp=0x3b5a700 esp=0x1afa40 pila=36 e5 5f 00 20 83 b5 03 00 a7 b5 03 00 00 00 00
+      retornos? 0x5fe536 0x710697 0x715af5 0x7168ed
+[6] 23:15:06 hilo 19752 -> 0x005fc1f0 | valor ahora e9 1b 3e 16 | eax=0x1a ebx=0x0 ecx=0x20af edx=0xb esi=0x1 edi=0x3b597a0 ebp=0x3b58320 esp=0x1afa48 pila=36 e5 5f 00 a0 97 b5 03 20 83 b5 03 00 00 00 00
+      retornos? 0x5fe536 0x710697 0x715414 0x717621
+[7] 23:16:22 hilo 19752 -> 0x005fc1f0 | valor ahora e9 1b 3e 16 | eax=0x11 ebx=0x0 ecx=0x18d6 edx=0x2 esi=0xbbce0010 edi=0x3b585b0 ebp=0x3b5a700 esp=0x1afa3c pila=36 e5 5f 00 b0 85 b5 03 00 a7 b5 03 00 00 00 00
+      retornos? 0x5fe536 0x6ce2cf 0x715376
+[8] 23:16:35 hilo 19752 -> 0x005fc1f0 | valor ahora e9 1b 3e 16 | eax=0xf ebx=0x0 ecx=0xf51 edx=0x0 esi=0xa edi=0x3b59cc0 ebp=0x3b585b0 esp=0x1afa3c pila=36 e5 5f 00 c0 9c b5 03 b0 85 b5 03 00 00 00 00
+      retornos? 0x5fe536 0x6ce2cf 0x715376
+El juego se cerró.
+Desenganchado. 8 impactos. Resumen por instrucción:
+  0x005fc1f0  x8

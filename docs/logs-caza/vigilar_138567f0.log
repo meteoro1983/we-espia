@@ -1,0 +1,11 @@
+Enganchado a pid 5504. Vigilando 0x138567f0 (escribe, 4 bytes) por 900 s / 6 impactos.
+Breakpoint puesto en 21/21 hilos. Jugá normalmente.
+[1] 22:24:17 hilo 6076 -> 0x008da334  mov edi, edx | valor ahora 00 00 00 00 | eax=0x0 ebx=0x13 ecx=0x2 edx=0x138567b0 esi=0x4c edi=0x138567f4 ebp=0x4 esp=0x1afa60 pila=01 00 00 00 18 00 00 00 84 4b 8d 00 01 00 00 00
+[2] 22:24:17 hilo 6076 -> 0x009a9b74  mov dword ptr [edx + esi*4], eax | valor ahora c0 f4 97 13 | eax=0x1397f4c0 ebx=0x0 ecx=0x1397f4c0 edx=0x138567b0 esi=0x10 edi=0x0 ebp=0x1afe4c esp=0x1afa88 pila=c0 f4 97 13 10 00 00 00 10 68 13 12 01 00 00 00
+[3] 22:24:23 hilo 6076 -> 0x008da334  mov edi, edx | valor ahora 00 00 00 00 | eax=0x0 ebx=0x1 ecx=0x2 edx=0x138567b0 esi=0x4c edi=0x138567f4 ebp=0x40 esp=0x1afa68 pila=01 00 00 00 18 00 00 00 84 4b 8d 00 01 00 00 00
+[4] 22:25:00 hilo 6076 -> 0x008da334  mov edi, edx | valor ahora 00 00 00 00 | eax=0x0 ebx=0x13 ecx=0x2 edx=0x138567b0 esi=0x4c edi=0x138567f4 ebp=0x4 esp=0x1afa60 pila=01 00 00 00 18 00 00 00 84 4b 8d 00 01 00 00 00
+[5] 22:25:00 hilo 6076 -> 0x009a9b74  mov dword ptr [edx + esi*4], eax | valor ahora d0 e3 97 13 | eax=0x1397e3d0 ebx=0x0 ecx=0x1397e3d0 edx=0x138567b0 esi=0x10 edi=0x0 ebp=0x1afe4c esp=0x1afa88 pila=d0 e3 97 13 10 00 00 00 10 68 13 12 01 00 00 00
+[6] 22:25:03 hilo 6076 -> 0x008da334  mov edi, edx | valor ahora 00 00 00 00 | eax=0x0 ebx=0x1 ecx=0x2 edx=0x138567b0 esi=0x4c edi=0x138567f4 ebp=0x40 esp=0x1afa68 pila=01 00 00 00 18 00 00 00 84 4b 8d 00 01 00 00 00
+Desenganchado. 6 impactos. Resumen por instrucción:
+  0x008da334  x4
+  0x009a9b74  x2

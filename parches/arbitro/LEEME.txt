@@ -1,0 +1,35 @@
+ARBITRO PERMISIVO - WE9 / WE9 LIVEWARE EVOLUTION (PC)
+=====================================================
+Que hace: todas las faltas del juego (barridas, cargas, empujones, agarrones...) pasan por una
+sola funcion interna "registrar falta". El parche la intercepta y, con el azar del propio
+juego, deja pasar un PORCENTAJE de las faltas (el arbitro "deja seguir"). Al 100 % no cobra
+ninguna (probado en WE9LE: 2 partidos en 5 estrellas sin una sola falta, sin cuelgues).
+Afecta a los dos equipos por igual. Al dejar pasar la falta tampoco hay tarjeta ni penal.
+
+Uso (Python 3 + pefile):
+  python parchear_arbitro.py <exe_origen> <exe_destino> <porcentaje 0-100> [we9le|we9]
+  ej. WE9LE:  python parchear_arbitro.py WE9LEK_K55.exe WE9LEK_K55_arbitro.exe 80 we9le
+  ej. WE9:    python parchear_arbitro.py we9.exe we9_arbitro.exe 80 we9
+Nunca pisa el exe original (escribe uno nuevo). Si el exe ya esta parcheado o es otra version, avisa y no hace nada.
+
+Direcciones:
+  WE9LE (WE9LEK crack / Kingsley V5.5): registrar falta 0x5FC1F0, rand 0x647B30, cave 0x4760000 (.securom)
+  WE9   (we9.exe nocd, con o sin Kitserver): registrar falta 0x5D4A10, rand 0x620400, cave 0xACD400 (cola de .text;
+        Kitserver usa 0xACDFE0)
+  El porcentaje queda en el byte del cave (offset en el mensaje del script): se puede cambiar con un editor hex.
+
+Como se encontro (2026-10-08): lista de jugadas en vivo -> cola cruda de eventos (0x3B0B8E4) -> tipos 0x25-0x2B
+(decisiones del arbitro) -> fase del partido (0xF7122D) -> estado del arbitro (0x3B17300) -> 0x5FF130 (pita/ventaja)
+-> registrar falta 0x5FC1F0 (gravedad 1-4 = sin tarjeta / amarilla / roja segun el "perfil" del arbitro).
+Detalle en ..\..\docs\MAPA_MEMORIA_WE9LE.md.
+
+VERSION SELECTIVA (la recomendada): parchear_arbitro_selectivo.py
+  python parchear_arbitro_selectivo.py <origen> <destino> 75 [we9le|we9] [--largo 31] [--ancho 25]
+  - Tarjetas (gravedad >= 2): se cobran siempre.
+  - Pelota en el area o cerca (|x| > largo m y |y| < ancho m desde el centro): se cobra siempre.
+  - Falta simple lejos del area: se deja pasar el % indicado.
+
+OJO EXE "LIMPIO" DE EVOWEB (Default Gameplay\we9lek.exe): busca la instalacion en el registro
+SOFTWARE\KONAMI\W9STRP y da "The game is not properly installed". Kingsley lo corrige a ...\WE9LEK.
+Corregirlo a mano (solo cambian 2 textos: 0xACE7FD "9STRP"->"E9LEK",
+0xACE85D "W9STRP"->"KONAMI").

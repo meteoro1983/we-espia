@@ -1,0 +1,4 @@
+# espia/ no necesita nada. Esto es para herramientas/ y parches/
+numpy
+capstone
+pefile
