@@ -33,7 +33,6 @@ Dos mitades:
 - PES6 **no probado**: su exe en disco está cifrado (SecuROM) y la PC de origen no tenía la clave de registro
   `KONAMI\PES6`. Probar con `diagnostico` con el juego abierto.
 - Partidos reales solo en WE9LE (lista de eventos, faltas, árbitro). WE9: firmas OK, sin partido de prueba.
-
 - `optionfile.py`: ida y vuelta idéntica byte a byte en option files reales de WE9LE, PES5 y PES6. `poner` y
   `exportar` probados.
 
